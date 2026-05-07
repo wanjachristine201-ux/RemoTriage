@@ -53,3 +53,12 @@
 {"level":"info","message":"::1 - - [07/May/2026:10:32:54 +0000] \"POST /api/v4/triage HTTP/1.1\" 200 - \"http://127.0.0.1:52401/assessment\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36\"","service":"remotriage-v4","timestamp":"2026-05-07 13:32:54"}
 {"level":"warn","message":"[DB] Assessment save failed: Operation `assessments.insertOne()` buffering timed out after 10000ms","service":"remotriage-v4","timestamp":"2026-05-07 13:33:04"}
 {"level":"error","message":"MongoDB connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","service":"remotriage-v4","timestamp":"2026-05-07 13:54:40"}
+{"level":"error","message":"MongoDB connection failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","service":"remotriage-v4","timestamp":"2026-05-07 13:55:15"}
+{"level":"warn","message":"Continuing without database — triage still works offline","service":"remotriage-v4","timestamp":"2026-05-07 13:55:15"}
+{"level":"info","message":"✅ RemoTriage v4 running on port 3000 [development]","service":"remotriage-v4","timestamp":"2026-05-07 13:55:15"}
+{"level":"info","message":"   API: http://localhost:3000/api/v4","service":"remotriage-v4","timestamp":"2026-05-07 13:55:15"}
+{"level":"info","message":"   Health: http://localhost:3000/api/v4/health","service":"remotriage-v4","timestamp":"2026-05-07 13:55:15"}
+{"level":"info","message":"[TRIAGE] 9b2a5c12-436e-4821-8bb0-838fb485d407 | Level: LOW | Rule: GENERAL_ILLNESS | County: Nairobi | Symptoms: fever","service":"remotriage-v4","timestamp":"2026-05-07 13:55:32"}
+{"level":"warn","message":"[FACILITIES] Live query failed (MongoDB not connected), using static fallback for county=Nairobi","service":"remotriage-v4","timestamp":"2026-05-07 13:55:32"}
+{"level":"info","message":"::1 - - [07/May/2026:10:55:32 +0000] \"POST /api/v4/triage HTTP/1.1\" 200 1999 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.8115\"","service":"remotriage-v4","timestamp":"2026-05-07 13:55:32"}
+{"level":"warn","message":"[DB] Assessment save failed: Operation `assessments.insertOne()` buffering timed out after 10000ms","service":"remotriage-v4","timestamp":"2026-05-07 13:55:42"}
